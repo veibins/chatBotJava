@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        
+
         String choiceOne = "Java";
         String choiceTwo = "C++";
         String choiceThree = "WEB/JS/HTML";
-        String statementOne = ("Tiekamies mācībās! ;)");
+        String statementOne = ("Tiekamies lekcijās! ;)");
         int choiceCodeLang = 0;
 
         /*defining variables*/
@@ -22,8 +22,17 @@ public class Main {
         String input = scanInput.nextLine();
 
         System.out.println("Laipni lūgts/a \"SuperDuper\" skolā, " + input + "!");
-        System.out.println("Lūdzu ieraksti, kādu programmēšanas valodu vēlies apgūt un spied Enter: (raksti \"1\", ja vēlies apgūt " + choiceOne +
-                " \"2\", ja vēlies apgūt " + choiceTwo + " \"3\", ja vēlies apgūt " + choiceThree + ")");
+        System.out.println("Vai vēlies uzsākt apmācības programmēšānā? Lūdzu atbildi ar \"Jā\" vai \"Nē\"");
+
+        String answer = scanInput.nextLine();
+
+        if (answer.equals( "Jā")){
+            System.out.println("Lūdzu ieraksti, kādu programmēšanas valodu vēlies apgūt " +
+                    "un spied Enter: (raksti \"1\", ja vēlies apgūt " + choiceOne +
+                    " \"2\", ja vēlies apgūt " + choiceTwo + " \"3\", ja vēlies apgūt " + choiceThree + ")");
+        } else {
+            System.out.println("Paldies, ka iegriezies. Gaidīsim Tevi atkal! :)");
+        }
 
         /*while loop to enter a valid integer for code to continue executing further*/
 
