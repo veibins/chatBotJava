@@ -1,2 +1,2 @@
 # chatBotJava
- ChatBot with if/else statement
+ ChatBot with "if/else" statement and "while" loop
